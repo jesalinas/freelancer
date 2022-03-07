@@ -1,21 +1,53 @@
+:root {
+    --white: #ffffff;
+    --dark: #212121;
+    --primary: #ffc107;
+    --secondary: #0097a7;
+    --gray: #757575;
+    --principal-font: 3.8rem;
+}
+
 html {
     font-size: 62.5%;
 }
 body {
-    font-size: 16px;
+    font-size: 16px; /* 1rem = 10px */
+    font-family: 'krub', sans-serif;
 }
 
-h1.titulo {
+.titulo {
     text-align: center;
-    color: black;
-    font-size: 3.8rem;   
-}
+    font-size: var(--principal-font);
+     }
 
 h1.titulo span {
     font-size: 2rem;
-    color: blue;
+
 }
 
-h2 span {
-    color:red;
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg {
+    background-color: var(--secondary);
+}
+
+.nav-principal {
+  display: flex;
+ justify-content: space-between;   
+}
+
+.nav-principal a {
+   color: var(--white);
+   text-decoration: none;
+   font-size: 2rem;
+   font-weight: 700;
+   padding: 1rem;
+}
+
+.nav-principal a:hover {
+    background-color: var(--primary);
+    color: var(--dark);
 }
